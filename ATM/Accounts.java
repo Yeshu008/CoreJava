@@ -73,7 +73,7 @@ public class Accounts {
     }
     public void getCheckingDepositInput(){
         System.out.println("checking balance"+moneyFormat.format(getCheckingBalance()));
-        System.out.println("amount u want to withdraw:");
+        System.out.println("amount u want to deposit:");
         double amount =input.nextDouble();
         if((checkingBalance+amount)>=0){
             calcCheckingWithdraw(amount);;
@@ -84,7 +84,7 @@ public class Accounts {
     }
     public void getSavingDepositInput(){
         System.out.println("checking balance"+moneyFormat.format(getSavingBalance()));
-        System.out.println("amount u want to withdraw:");
+        System.out.println("amount u want to deposit:");
         double amount =input.nextDouble();
         if((savingBalance+amount)>=0){
             calcSavingWithdraw(amount);;
